@@ -17,8 +17,12 @@
         </classpath>
     </taskdef>
     
-    <target name="deployToDevOrg">
+    <target name="deployToINT1">
        <sf:deploy username="roberto.sigalotti.INT1@test.com" password="ilikeIT!12345i2d8Lhnu4p5xp5AukVINfnw4" serverurl="https://login.salesforce.com" deployRoot="src" rollbackOnError="true"/>
+    </target>
+	
+    <target name="deployToINT2">
+       <sf:deploy username="roberto.sigalotti.INT2@test.com" password="ilikeIT!12345oR5i3GRYhmaa08oopxIHB1Cj" serverurl="https://login.salesforce.com" deployRoot="src" rollbackOnError="true"/>
     </target>
 	
 	
