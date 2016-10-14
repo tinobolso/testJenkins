@@ -16,6 +16,11 @@
             <pathelement location="ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
+    
+    <target name="deployToDevOrg">
+       <sf:deploy username="roberto.sigalotti.INT1@test.com" password="ilikeIT!12345i2d8Lhnu4p5xp5AukVINfnw4" serverurl="https://login.salesforce.com" deployRoot="src" rollbackOnError="true"/>
+    </target>
+	
 	
     <!-- Test out deploy and retrieve verbs for package 'mypkg' -->
     <target name="test">
