@@ -22,8 +22,9 @@
     </target>
 	
     <target name="deployToINT2">
-       <sf:deploy username="roberto.sigalotti.INT2@test.com" password="ilikeIT!12345oR5i3GRYhmaa08oopxIHB1Cj" serverurl="https://login.salesforce.com" deployRoot="src" rollbackOnError="true" runAllTests="true"/>
-    </target>
+       <sf:deploy username="roberto.sigalotti.INT2@test.com" password="ilikeIT!12345oR5i3GRYhmaa08oopxIHB1Cj" serverurl="https://login.salesforce.com" deployRoot="src" rollbackOnError="true"/>
+       		<runTests>TestingClass</runTests>
+       </target>
 	
 	
     <!-- Test out deploy and retrieve verbs for package 'mypkg' -->
